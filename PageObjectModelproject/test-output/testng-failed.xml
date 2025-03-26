@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginLogout(failed)">
+    <classes>
+      <class name="com.testcases.LogoutTest">
+        <methods>
+          <include name="logout"/>
+          <include name="tearDown"/>
+          <include name="initDriver"/>
+        </methods>
+      </class> <!-- com.testcases.LogoutTest -->
+      <class name="com.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initDriver"/>
+          <include name="loginWithinvalidusernameAndpassword"/>
+          <include name="loginWithValidusernameAndpassword"/>
+        </methods>
+      </class> <!-- com.testcases.LoginTest -->
+    </classes>
+  </test> <!-- LoginLogout(failed) -->
+</suite> <!-- Failed suite [Suite] -->
